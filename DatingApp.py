@@ -57,7 +57,7 @@ st.markdown("<h2 style='text-align: center; color: black;'>Basic Information </h
 # You can call any Streamlit command, including custom components:
 st.table(data.groupby('sex')['age'].mean())
 
-st.image('/work/Group4App/age-gender.jpg', width=600)
+st.image('age-gender.jpg', width=600)
 
 col11, col12, col13 = st.columns(3)
 
@@ -166,7 +166,7 @@ with st.container():
 
   st.header(" Jobs and Drugs")
 
-  st.image('/work/Group4App/jobanddrug.jpg', width=600)
+  st.image('jobanddrug.jpg', width=600)
 
   st.write(pd.crosstab(data.job, data.drugs, normalize='index'))
 
